@@ -1,0 +1,33 @@
+<%= form_for @contact do |f| %>
+	<div class='row pvs'>
+		<div class='col-md-2'>
+			<%= label_tag :name %>
+		</div>
+		<div class='col-md-10'>
+			<%= f.text_field :name, :required => true %>
+		</div>
+	</div>
+	<div class='row pvs'>
+		<div class='col-md-2'>
+			<%= label_tag :email %>
+		</div>
+		<div class='col-md-10'>
+		  <%= f.text_field :email, :required => true %>
+		</div>
+  </div>
+  <div class='row pvs'>
+  	<div class='col-md-2'>
+	  	<%= label_tag :message %>
+	  </div>
+	  <div class='col-md-10'>
+		  <%= f.text_area :message, :required => false, :size => "50x10" %>
+		</div>
+  </div>
+  <div class='row pvs'>
+  	<div class='col-md-2'>
+	  </div>
+	  <div class='col-md-10'>
+		  <%= f.submit 'Send message', :class => 'c-green-hover braxs zl' %>
+		</div>
+	</div>
+<% end %>
