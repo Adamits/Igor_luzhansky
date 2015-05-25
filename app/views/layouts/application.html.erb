@@ -7,11 +7,11 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div class='row'>
+    <div class='row mbxxl'>
       <div class='col-md-2 prn'>
         <%= render partial: "shared/nav" %>
       </div>
-      <div class='col-md-8 col-sm-8 bwls bss bc-1 pvs phxxxl'>
+      <div class='col-md-8 col-sm-8 bwls bss bc-1 pvs'>
         <% if flash[:error] %>
           <div class='c-red'>
             <%= flash[:error] %>
@@ -27,7 +27,7 @@
       <div class='col-md-2'>
       </div>
     </div>
-    <div class='row dvxxxl bg-4'>
+    <div class='bottom fixed dvxl bg-4 full-width'>
       <%= render partial: "shared/footer" %>
     </div>
   </body>
